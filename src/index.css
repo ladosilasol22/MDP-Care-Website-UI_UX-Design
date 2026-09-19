@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --color-primary: #DC2626;
+  --color-primary-dark: #B91C1C;
+  --color-primary-light: #FEF2F2;
+  --color-surface: #F8F9FA;
+  --color-border: #E5E7EB;
+  --color-muted: #6B7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Modal slide up animation */
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up {
+  animation: slide-up 0.28s cubic-bezier(0.34, 1.2, 0.64, 1) both;
+}
+
+/* Mobile frame utility */
+.mobile-frame {
+  width: 390px;
+  min-height: 844px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.06);
+  position: relative;
+}
+
+/* Status badge colors */
+.status-baru { background: #EFF6FF; color: #1D4ED8; }
+.status-diproses { background: #FEF9C3; color: #A16207; }
+.status-selesai { background: #F0FDF4; color: #15803D; }
+.status-ditolak { background: #FEF2F2; color: #DC2626; }

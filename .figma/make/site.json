@@ -1,0 +1,10 @@
+{
+  "description": "MDP Care is a user-friendly complaint platform for students and lecturers at Universitas Multi Data Palembang, allowing anonymous submissions and efficient admin responses.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
